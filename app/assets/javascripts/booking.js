@@ -41,15 +41,15 @@ $(document).ready(function() {
         // element generation
 
         var $talk = $('<div>', {class: "talk row"}).data('id', talk.id);
-        var $talkHeader = $('<div>', {class: "talk-header"});
+        var $talkHeader = $('<div>', {class: "talk-header col s12"});
         var $topic = $('<div>', {class: 'topic'}).text(talk.topic);
         var $time = $('<div>', {class: 'time'}).text("31st, Oct @ " + talk.session_time);
-        var $ticketEntry = $('<div>', {class: "ticket-entry"});
+        var $ticketEntry = $('<div>', {class: "ticket-entry col s12"});
         var $ticketQty = $('<input>', {class: 'ticketQty', type: 'text', value: 0});
         var $priceSeat = $('<div>', {class: 'price-seat'});
-        var $price = $('<div>', {class: 'price'}).text("$" + talk.price);
+        var $price = $('<div>', {class: 'price'}).text("Price: $" + talk.price);
         var $seats = $('<div>', {class: 'seats'}).text("Tickets Left: " + talk.seats);
-        var $ticketForm = $('<div>', {class: 'ticketForm  row'});
+        var $ticketForm = $('<div>', {class: 'ticketForm row col s12'});
 
         var $minusDiv = $('<div>', {class: 'minusDiv col s6'});
         var $plusDiv = $('<div>', {class: 'plusDiv col s6'});
@@ -85,6 +85,7 @@ $(document).ready(function() {
     $('.ticketing').append($talkList);
 
     $talkList.append($pricePanel);
+    $talkList.append("<div class='inner-container row'><div class='book-back-div col s6'><a id='book-back-btn' class='waves-effect waves-light btn-large'><i class='medium material-icons left'>play_arrow</i>Back</a></div><div class='book-btn-div col s6'><a id='book-btn' href='#' data-activates='payment' class='button-collapse waves-effect waves-light btn'>Book<i class='medium material-icons right'>play_arrow</i></a></div></div>");
 
 
     //event bundling
