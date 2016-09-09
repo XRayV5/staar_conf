@@ -1,8 +1,10 @@
-.talkList{
-  clear:both;
+.ticketing{
+  margin-top: 10vh;
 }
 
-
+.talk-h4{
+  margin-top: 4vh;
+}
 
 .talk-list .talk .row{
   margin-left: 10%;
@@ -30,6 +32,7 @@
   text-align: center;
   width: 100%;
 }
+
 
 .ticket-entry .ticketQty{
   margin: 0 20% 0 20%;
