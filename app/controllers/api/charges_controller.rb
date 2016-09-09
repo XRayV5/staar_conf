@@ -41,7 +41,7 @@ module Api
             render json: {success: false}
           end
 
-          TicketMailer.welcome_email(record.email).deliver
+          # TicketMailer.welcome_email(record.email).deliver
 
       end
 
