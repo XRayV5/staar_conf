@@ -37,7 +37,7 @@ function stripeResponseHandler(status, response) {
 
     $.ajax({
       type:"POST",
-      url:"http://localhost:3000/api/charges",
+      url:"https://staar-conf.herokuapp.com/api/charges",
       data:{token : token_,
             amount : amount_,
             info : { fname : firstname,

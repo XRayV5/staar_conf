@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: "GET",
-      url: 'http://localhost:3000/api/events'
+      url: 'https://staar-conf.herokuapp.com/api/events'
     }).done(
       function(res){
         console.log(JSON.stringify(res));
@@ -229,7 +229,7 @@ var shoppingCart = function (ticket_arr) {
       selfUpdate : function(callback){
         $.ajax({
           type: "GET",
-          url: 'http://localhost:3000/api/events'
+          url: 'https://staar-conf.herokuapp.com/'
         }).done(
           function(res){
             console.log(JSON.stringify(res));
