@@ -40,14 +40,17 @@ video {
 }
 
 .title-msg {
-  margin-top: 0;
-  font-weight: 300;
+margin-top: 0;
+font-weight: 300;
+line-height: 1.3em;
+}
+
+.animation {
   -webkit-animation-duration: 1.4s;
   animation-duration: 1.4s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   animation-delay: 2s;
-  line-height: 1.3em;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -232,4 +235,8 @@ video {
 
 .bigScreenLinks {
   padding-bottom: 2em;
+}
+
+#big-screen-video {
+  text-align: center;
 }
