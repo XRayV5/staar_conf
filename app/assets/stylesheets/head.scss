@@ -36,7 +36,7 @@ a.back-to-top {
 
 video {
   margin: 2em auto;
-  width: auto;
+  max-width: 320px;
 }
 
 .title-msg {
@@ -233,4 +233,3 @@ video {
 .bigScreenLinks {
   padding-bottom: 2em;
 }
-
