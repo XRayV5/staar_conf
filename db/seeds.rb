@@ -51,7 +51,7 @@ t6.save
 
 t7 = Event.new()
 t7.topic = "Let's all learn ES6 together"
-t7.session_time = "11:30pm"
+t7.session_time = "11:30am"
 t7.price = 29
 t7.seats = 15
 t7.save
@@ -65,7 +65,7 @@ t8.save
 
 t9 = Event.new()
 t9.topic = "NP Hard Problem - softened"
-t9.session_time = "4:30am"
+t9.session_time = "10:45am"
 t9.price = 99999
 t9.seats = 12
 t9.save
