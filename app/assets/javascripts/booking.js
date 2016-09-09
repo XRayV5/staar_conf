@@ -229,7 +229,7 @@ var shoppingCart = function (ticket_arr) {
       selfUpdate : function(callback){
         $.ajax({
           type: "GET",
-          url: 'https://staar-conf.herokuapp.com/'
+          url: 'https://staar-conf.herokuapp.com/api/charges'
         }).done(
           function(res){
             console.log(JSON.stringify(res));
