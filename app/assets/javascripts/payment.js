@@ -3,6 +3,7 @@ $(function() {
   $form.submit(function(event) {
     // Disable the submit button to prevent repeated clicks:
     $form.find('.submit').prop('disabled', true);
+    // $('#loader').empty();
     $('#loader').append("<div class='progress'><div class='indeterminate'></div></div>");
     // Request a token from Stripe:
     Stripe.card.createToken($form, stripeResponseHandler);
